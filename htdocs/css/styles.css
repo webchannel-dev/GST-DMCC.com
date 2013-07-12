@@ -1,0 +1,352 @@
+/* top elements */
+* { padding: 0; margin: 0; }
+
+body {
+    margin: 0; 	padding: 0;
+    font: normal 73%/1.5em 'Trebuchet MS', Tahoma, sans-serif;
+    color: black;
+    background: #FFF url(http://gst-dmcc.com/htdocs/img/bg_new.jpg) repeat-x;
+    text-align: center;		
+}
+
+/* links */
+a { background: inherit; color: #72A545; text-decoration: none; }
+a:hover { background: inherit; color: #006699; text-decoration: underline; }
+
+/* headers */
+h1, h2, h3 { font: bold 1em 'Trebuchet MS', Tahoma, Sans-serif; }
+h1 { font-size: 1.4em; color: #f26522; }
+h2 { font-size: 1.2em; text-transform: uppercase; }
+h3 { font-size: 1.2em; }
+
+p, h1, h2, h3 {
+    margin: 10px 15px;
+}
+ul, ol {
+    margin: 10px 30px;
+    padding: 0 15px;		
+}
+
+/* images */
+img {
+    border: 1px solid #DADADA;
+    padding: 5px;
+}
+
+img.float-right {
+    margin: 5px 0px 5px 15px;  
+}
+img.float-left {
+    margin: 5px 15px 5px 0px;
+}
+
+acronym {
+    cursor: help;
+    border-bottom: 1px solid #777;
+}
+blockquote {
+    margin: 15px; 	
+    padding: 0 0 0 20px;  	
+    background-color: #FAFAFA; 
+    background-position: 8px 10px;
+    border: 1px solid #f2f2f2; 
+    border-left: 3px solid #72A545;  
+    font: bold 1.2em/1.5em "Trebuchet MS", Tahoma, sans-serif; 
+    color: #666666;	
+}
+
+/***********************
+          LAYOUT
+************************/
+#header-content, #content, #footer-content {
+    width: 760px;
+}
+
+/* header */
+#header {
+    height: 158px;
+    text-align: left;
+    background-color: black;
+}
+#header-content {	
+    margin: 0 auto; padding: 0;
+    position: relative;
+    height:200px;
+}
+
+#header-content a img{
+    border: 0px;	
+    padding-top: 30px;
+    margin: 2px;
+}
+#header-content h1#logo {
+    position: absolute;	
+    font: bold 45px 'Trebuchet MS', Sans-serif;
+    letter-spacing: -2px; 
+    color: #FFF;
+    margin: 0; padding: 0;	
+    /* change the values of left and top to adjust the position of the logo */
+    top: 0; left: 0px;
+}
+#header-content h1#logo a {
+    text-decoration: none;
+    color: #FFF;
+}
+#header-content #slogan {
+    position: absolute;	
+    font: bold 12px 'Trebuchet Ms', Sans-serif;
+    text-transform: none;
+    color: #FFF;	
+    margin: 0; padding: 0;
+    /* change the values of left and top to adjust the position of the slogan */
+    top: 55px; left: 40px;
+}
+
+/* header menu */
+#header-content ul {
+    position: absolute;
+    right: 2px; bottom: 48px;
+    font: bolder 1.3em 'Trebuchet MS', sans-serif;
+    color: #FFF;
+    list-style: none;
+    margin: 0; padding: 0;		
+}
+#header-content li {
+    display: inline;
+}
+#header-content li a {
+    float: left;
+    display: block;
+    padding: 0.6em 1.1em;	
+    color: #FFF;
+    background-color: #6b6f72;
+    text-decoration: none;
+    border-right: 1px solid #272727;
+}
+#header-content li a:hover {
+    background: #ff9c00;
+    color: #FFF;
+}
+#header-content li a#current  {
+    background: red;
+    color: #FFF;
+}
+
+/* header photo */
+.headerphoto {
+
+    margin: 0 auto;
+    width: 100%;
+    height: 350px;
+    padding: 20px 10px 10px 0px; 
+   
+}
+/*.headerphoto img {   
+    margin: 0 auto;
+    width: 760px;
+    height: 350px;
+    padding: 20px 10px 10px 10px; 
+    background-color:  #716457;
+}*/
+
+.headerphoto .slider {
+    width:760px;
+    height:350px;
+    overflow:hidden;
+    margin:0px auto;
+    background-image:url(http://gst-dmcc.com/htdocs/img/loading.gif);
+    background-size: 80px;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.headerphoto .slider img {
+    width:740px;
+    height:330px;
+    display:none;
+}
+
+/* content */
+#content-wrap {
+    clear: both;
+    float: left;
+    width: 100%;
+}
+#content {
+    text-align: left;	
+    padding: 0;
+    margin: 0 auto;
+}
+
+/* sidebar */
+#sidebar {
+    float: right;
+    width: 30%;
+    margin: 0 0 10px 0; padding: 0;	
+}	
+#sidebar h1 {
+    padding: 10px 0px 5px 10px;
+    margin: 0;	
+    font: bold 1.3em 'Trebuchet MS', Tahoma, Sans-serif;
+}
+.sidebox {
+    background: #F5F5F5;
+    border: 1px solid #EFEDED;
+    margin-bottom: 10px;
+}
+
+/* sidebar menu */
+#sidebar ul.sidemenu {
+    list-style:none;
+    margin: 10px 0 15px 0;
+    padding: 0;
+    background: #F2F2F2;			
+}
+#sidebar ul.sidemenu li {
+    padding: 0px 10px;
+}
+#sidebar ul.sidemenu a {
+    display:block;
+    font-weight:normal;
+    color: #333;
+    height: 1.5em;	
+    padding:.3em 0 .3em 15px;
+    line-height: 1.5em;
+    border-bottom: 1px dashed #D4D4D4;
+    text-decoration:none;
+}
+#sidebar ul.sidemenu a.top{	
+    border-top: 1px dashed #D4D4D4;
+}
+#sidebar ul.sidemenu a:hover {
+    padding: .3em 0 .3em 10px;
+    border-left: 5px solid  #65944A;
+    color: #65944A;		
+}
+
+/* main */
+#main {
+    /*float: left;*/
+    width: 100%;	
+    margin: 0 0 10px 0; padding: 0;	
+}
+#main h1 {
+    padding: 10px 10px 10px 10px;
+    margin: 0 10px 0 10px;
+    border-bottom: 1px solid #716457;	
+    font: normal 1.8em 'Trebuchet MS', Tahoma, Sans-serif;
+}
+#main ul li {
+    list-style-image: url(http://gst-dmcc.com/htdocs/img/bullet_new.gif);
+    font-size:1.3em;
+}
+#main ol li {
+    font-size:1.3em;
+    color: #f26522;
+    font-weight: bold;
+}
+#main ol li p{
+    font-weight: normal;
+    font-size:1em;
+    color:black;
+    margin:0px; padding: 0px;
+}
+#main p {
+    font-size:1.3em;
+}
+
+.post {
+    margin-top: 30px; padding: 0;
+    margin-bottom: 30px;
+    background: #FFF url(http://gst-dmcc.com/htdocs/img/gradientbg.jpg) repeat-x;
+    border: 1px solid #716457;
+    min-height: 300px;
+}
+
+.post  .address{
+    background: url(http://gst-dmcc.com/htdocs/img/address.png) no-repeat 0 5px;
+    padding:7px 30px;
+}
+.post  .tel{
+    background: url(http://gst-dmcc.com/htdocs/img/mobile.png) no-repeat 0 5px;
+    padding: 7px 30px;
+}
+.post  .fax{
+    background: url(http://gst-dmcc.com/htdocs/img/mobile.png) no-repeat 0 5px;
+    padding: 7px 30px;
+}
+.post  .email{
+    background: url(http://gst-dmcc.com/htdocs/img/email.png) no-repeat 0 5px;
+    padding: 7px 30px;
+}
+.post .post-footer {
+    background-color: #FAFAFA;
+    border: 1px solid #f2f2f2;
+    padding: 5px; margin-top: 20px;
+    font-size: 95%;
+}
+.post .post-footer .date {
+    background: url('clock.html') no-repeat 0 center;
+    padding-left: 20px; margin: 0 10px 0 5px;
+}
+.post .post-footer .comments {
+    background: url('comment.html') no-repeat 0 center;
+    padding-left: 20px; margin: 0 10px 0 5px;
+}
+.post .post-footer .readmore {
+    background: url('page.html') no-repeat 0 center;
+    padding-left: 20px; margin: 0 10px 0 5px;
+}
+
+/* footer */
+#footer {
+    clear: both;
+    margin: 0; padding: 0;
+    font: normal .95em/1.6em 'Trebuchet MS', Tahoma, Arial, sans-serif;
+    text-align: left;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    color: #FFF;
+}
+
+#footer h1, #footer p {	margin-left: 0; 
+                        width: 100%;
+                        background-color: black;
+}
+
+#footer-content {	
+    margin: 0 auto;
+    padding-left: 15px;
+    background-color: #453c34;
+}
+#footer-content a {
+    text-decoration: none;
+    color: #777;	
+}
+#footer-content a:hover {
+    text-decoration: underline;
+    color: #ff9c00;
+}
+#footer-content ul {
+    list-style: none;
+    margin: 0; padding: 0;
+}
+#footer-content .col {
+    width: 32%;
+    padding: 0 5px 30px 0;	
+}
+#footer-content .col2 {
+    width: 33%;
+    padding: 0 0 30px 0;	
+}
+
+/* alignment classes */
+.float-left  { float: left; }
+.float-right { float: right; }
+.align-left  { text-align: left; }
+.align-right {	text-align: right; }
+
+/* additional classes */
+.clear { clear: both; }
+.gray  { color: #BFBFBF; }
